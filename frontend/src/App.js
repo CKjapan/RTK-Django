@@ -2,12 +2,14 @@ import React from "react";
 import styles from "./App.module.css";
 
 import { FaSignInAlt } from "react-icons/fa";
+
 import TaskList from "./features/task/TaskList";
 import TaskDetails from "./features/task/TaskDetails";
 import TaskInput from "./features/task/TaskInput";
 import Header from "./features/login/Header";
 
 function App() {
+  // ログアウト関数/localStorageからトークン削除してtopPageに遷移。
   const Logout = () => {
     localStorage.removeItem("localJWT");
     window.location.href = "/";

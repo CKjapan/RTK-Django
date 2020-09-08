@@ -1,19 +1,20 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./Login.module.css";
+
+import Button from "@material-ui/core/Button";
 
 import {
   //loginSliceのreducersをimport
   editUsername,
   editPassword,
   toggleMode,
-  //loginSliceのcreateAsyncThunk,extraReducersをReducersをimport
-  fetchAsyncLogin,
-  fetchAsyncRegister,
   //loginSliceのstate参照関数をimport
   selectAuthen, //state:{authen: {username: "",password: ""}}
   selectIsLoginView, //state:{isLoginView: true}
+  //loginSliceのcreateAsyncThunk,extraReducersをReducersをimport
+  fetchAsyncLogin,
+  fetchAsyncRegister,
 } from "./loginSlice";
 
 const Login = () => {
