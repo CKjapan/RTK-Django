@@ -1,0 +1,8 @@
+Django==3.0.7
+psycopg2==2.7.6
+psycopg2-binary==2.7.7
+djangorestframework==3.10
+django-cors-headers
+djangorestframework_simplejwt==4.1.2
+djoser
+django-rest-swagger

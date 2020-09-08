@@ -1,0 +1,7 @@
+ FROM node:12.18.0-alpine
+
+RUN npm install -g create-react-app
+RUN npm install axios
+RUN npm install react-icons
+RUN npm install react-router-dom
+RUN npm install @material-ui/core
